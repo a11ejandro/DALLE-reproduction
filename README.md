@@ -33,14 +33,16 @@ $ pip install -r requirements
 ```
 
 2. Install DeepSpeed
+- DeepSpeed is only necessary for attention type 'sparse'.
 - Follow the instruction [here](https://github.com/lucidrains/DALLE-pytorch#deepspeed-sparse-attention) and install DeepSpeed
 
 ### Models
 - Download models below and save them in *pretrained* folder
 - Check the link in *Details* for the model specifics
 
-Dataset | Download | Password | Optimizer | Size | Details
--- | -- | -- | -- | -- | --
-CUB200 | [link](https://dubox.com/s/1cBrzsPZ9WeBZ47OMlZV9rw) | v9ge | Adam | 1.1GB | [link](https://github.com/lucidrains/DALLE-pytorch/discussions/131#discussion-3296648)
-CUB200 | [link](https://dubox.com/s/1e3RTwdWYsKcs4RtKATfQNg) | 47w1 | AdamW | 1.1GB | [link](https://github.com/lucidrains/DALLE-pytorch/discussions/139#discussioncomment-560790)
-COCO | [link](https://dubox.com/s/1dbJSCyoQdPVQLJb2rxEvKg) | p3ki | Adam | 1.5GB | [link](https://github.com/lucidrains/DALLE-pytorch/discussions/181)
+Dataset | Download | Password | Optimizer | Attention type | Size | Details
+-- | -- | -- | -- | -- | -- | --
+CUB200 | [link](https://dubox.com/s/1cBrzsPZ9WeBZ47OMlZV9rw) | v9ge | Adam | ('full', 'sparse') | 1.1GB | [link](https://github.com/lucidrains/DALLE-pytorch/discussions/131#discussion-3296648)
+CUB200 | [link](https://dubox.com/s/1zYtv9-hDGIiTmhV2jpYCRQ) | eui3 | Adam | ('full', 'axial_row', 'axial_col', 'conv_like') | 1.1GB | [link](https://github.com/lucidrains/DALLE-pytorch/discussions/131#discussioncomment-640446)
+CUB200 | [link](https://dubox.com/s/1e3RTwdWYsKcs4RtKATfQNg) | 47w1 | AdamW | ('full', 'sparse') | 1.1GB | [link](https://github.com/lucidrains/DALLE-pytorch/discussions/139#discussioncomment-560790)
+COCO | [link](https://dubox.com/s/1dbJSCyoQdPVQLJb2rxEvKg) | p3ki | Adam | ('full', 'sparse') | 1.5GB | [link](https://github.com/lucidrains/DALLE-pytorch/discussions/181)
